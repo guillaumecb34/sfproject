@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f11d14-d01b-4f2e-81a7-ed186edcaf3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/article/article.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,8 +156,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\sfproject\templates" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -183,6 +191,7 @@
       <workItem from="1575557174842" duration="59000" />
       <workItem from="1575557246853" duration="106000" />
       <workItem from="1575557366874" duration="4953000" />
+      <workItem from="1575622757412" duration="17029000" />
     </task>
     <servers />
   </component>
@@ -190,14 +199,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1575562096512">
+    <state x="606" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575642402066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575562096512" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1575557580885">
+    <state x="606" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575642402066" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575639408857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575557580885" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575639408857" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1575638869786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575638869786" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1575625470407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575625470407" />
     <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1575557251048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
