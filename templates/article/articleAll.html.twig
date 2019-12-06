@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ArticleController!{% endblock %}
+{% block title %}Hello ArticleAll!{% endblock %}
 
 {% block body %}
 <style>
@@ -12,8 +12,9 @@
     <h1>Hello {{ controller_name }}! ✅</h1>
     <div>
         <form class="btn btn-dark">
-            <a href="{{ path('showAllArticle') }}" type="submit">All Article</a>
-            <a href="{{ path('createArticle') }}" type="submit">Create Article</a>
+            <a href="/blog/article/showone/1" type="submit">One Article</a>
+            <a href="/blog/article/update_article/1" type="submit">Update Article</a>
+            <a href="/blog/article/delete_article/1" type="submit">Delete Article</a>
         </form>
 
     </div>
