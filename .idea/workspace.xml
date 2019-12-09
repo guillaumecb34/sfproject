@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f11d14-d01b-4f2e-81a7-ed186edcaf3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/article/articleAll.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/article/articleAll.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/article/articleOne.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/article/createArticle.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/article/deleteArticle.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/article/updateArticle.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/auteur/auteurAll.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/auteur/auteurOne.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/auteur/createAuteur.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/auteur/deleteAuteur.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/blog/auteur/updateAuteur.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sfproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sfproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuteurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/articleAll.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auteur/auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/auteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +166,8 @@
   <component name="ProjectId" id="1UZGuTXDX5XnphwyMigmCcrXFL5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -154,11 +175,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/article" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/blog/auteur" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\sfproject\public" />
+      <recent name="C:\wamp64\www\sfproject\src" />
+      <recent name="C:\wamp64\www\sfproject\templates\blog" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\sfproject\templates\blog\auteur" />
+      <recent name="C:\wamp64\www\sfproject\templates\blog\article" />
       <recent name="C:\wamp64\www\sfproject\templates\article" />
       <recent name="C:\wamp64\www\sfproject\templates" />
     </key>
@@ -191,6 +219,7 @@
       <workItem from="1575557246853" duration="106000" />
       <workItem from="1575557366874" duration="4953000" />
       <workItem from="1575622757412" duration="18263000" />
+      <workItem from="1575881670539" duration="20583000" />
     </task>
     <servers />
   </component>
@@ -206,14 +235,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575639408857" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1575638869786">
+    <state x="770" y="334" key="NewPhpClassDialog" timestamp="1575908120469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575638869786" />
+    <state x="770" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575908120469" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1575889002790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575889002790" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1575625470407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575625470407" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1575904508330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1575904508330" />
     <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1575557251048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

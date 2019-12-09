@@ -13,96 +13,62 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/blog/article", name="blog_article")
+     * @Route("/blog/article", name="blogArticle")
      */
-    public function index()
+    public function indexArticle()
     {
-        return $this->render('article/article.html.twig', [
-            'controller_name' => 'ArticleController',
+        return $this->render('blog/article/article.html.twig', [
+            'controller_name' => 'Article Controller',
         ]);
     }
 
     /**
      * @Route("/blog/article/showone/{idArticle}", name="showOneArticle")
      * @param $idArticle
-     * @param Request $request
-     * @return Response
      */
-    function showOneById($idArticle, Request $request)
+    public function indexShowOneById($idArticle)
     {
-        $response = new Response();
-
-        $content = "<html><body>nous sommes dans 1 article</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/article/articleOne.html.twig', [
+            'idArticle' => $idArticle
+        ]);
     }
 
     /**
      * @Route("/blog/article/showall", name="showAllArticle")
-     * @param Request $request
-     * @return Response
      */
-    function showAll(Request $request)
+    public function indexShowAll()
     {
-        $response = new Response();
-
-        $content = "<html><body>nous sommes dans tout les articles</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/article/articleAll.html.twig');
     }
 
     /**
      * @Route("/blog/article/create_article", name="createArticle")
-     * @param Request $request
-     * @return Response
      */
-    function createArticle(Request $request)
+    public function indexCreateArticle()
     {
-        $response = new Response();
-
-        $content = "<html><body>Page de creation d'article</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/article/createArticle.html.twig');
     }
 
     /**
      * @Route("/blog/article/update_article/{idArticle}", name="updateArticle")
-     * @param Request $request
      * @param $idArticle
-     * @return Response
      */
-    function updateArticle($idArticle, Request $request)
+    function indexUpdateArticle($idArticle)
     {
-        $response = new Response();
-
-        $content = "<html><body>ici tu update un article</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/article/updateArticle.html.twig', [
+            'idArticle' => $idArticle
+        ]);
     }
 
     /**
      * @Route("/blog/article/delete_article/{idArticle}", name="deleteArticle")
-     * @param Request $request
      * @param $idArticle
-     * @return Response
      */
-    function deleteArticle($idArticle, Request $request)
+    function IndexDeleteArticle($idArticle)
     {
-        $response = new Response();
-
-        $content = "<html><body>ici tu delete un article</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/article/deleteArticle.html.twig', [
+            'idArticle' => $idArticle
+        ]);
     }
 
 

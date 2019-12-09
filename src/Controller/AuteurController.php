@@ -10,96 +10,62 @@ use Symfony\Component\Routing\Annotation\Route;
 class AuteurController extends AbstractController
 {
     /**
-     * @Route("blog/auteur", name="auteur")
+     * @Route("blog/auteur", name="blogAuteur")
      */
-    public function index()
+    public function indexAuteur()
     {
-        return $this->render('auteur/auteur.html.twig', [
-            'controller_name' => 'AuteurController',
+        return $this->render('blog/auteur/auteur.html.twig', [
+            'controller_name' => 'Auteur Controller',
         ]);
     }
 
     /**
      * @Route("/blog/auteur/showone/{idAuteur}", name="showOneAuteur")
      * @param $idAuteur
-     * @param Request $request
-     * @return Response
      */
-    function showOneAuteurById($idAuteur, Request $request)
+    public function indexShowOneAuteurById($idAuteur)
     {
-        $response = new Response();
-
-        $content = "<html><body>nous sommes dans 1 auteur</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/auteur/auteurOne.html.twig', [
+            'idAuteur' => $idAuteur
+        ]);
     }
 
     /**
      * @Route("/blog/auteur/showall", name="showAllAuteur")
-     * @param Request $request
-     * @return Response
      */
-    function showAllAuteur(Request $request)
+    public function indexShowAllAuteur()
     {
-        $response = new Response();
-
-        $content = "<html><body>nous sommes dans tout les auteurs</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/auteur/auteurAll.html.twig');
     }
 
     /**
      * @Route("/blog/auteur/create_auteur", name="createAuteur")
-     * @param Request $request
-     * @return Response
      */
-    function createAuteur(Request $request)
+    public function indexCreateAuteur()
     {
-        $response = new Response();
-
-        $content = "<html><body>Page de creation d'auteur</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/auteur/createAuteur.html.twig');
     }
 
     /**
      * @Route("/blog/auteur/update_auteur/{idAuteur}", name="updateAuteur")
-     * @param Request $request
      * @param $idAuteur
-     * @return Response
      */
-    function updateAuteur($idAuteur, Request $request)
+    public function indexUpdateAuteur($idAuteur)
     {
-        $response = new Response();
-
-        $content = "<html><body>ici tu update auteur</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/auteur/updateAuteur.html.twig', [
+            'idAuteur' => $idAuteur
+        ]);
     }
 
     /**
      * @Route("/blog/auteur/delete_auteur/{idAuteur}", name="deleteAuteur")
-     * @param Request $request
      * @param $idAuteur
-     * @return Response
      */
-    function deleteAuteur($idAuteur, Request $request)
+    public function indexDeleteAuteur($idAuteur)
     {
-        $response = new Response();
-
-        $content = "<html><body>ici tu delete auteur</body></html>";
-        $response->setContent($content);
-        $response->setStatusCode(200);
-
-        return $response;
+        return $this->render('blog/auteur/deleteAuteur.html.twig', [
+            'idAuteur' => $idAuteur
+        ]);
     }
 
 

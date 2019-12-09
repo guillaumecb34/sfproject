@@ -46,7 +46,8 @@
             "App\\": "src/"
         }
     },
-    "autoload-dev": {
+    "
+    oload-dev": {
         "psr-4": {
             "App\\Tests\\": "tests/"
         }
