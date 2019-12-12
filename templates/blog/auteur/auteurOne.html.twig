@@ -3,13 +3,22 @@
 {% block title %}Un Auteur!{% endblock %}
 
 {% block content %}
-    <style>
-        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    </style>
 
-<div class="example-wrapper">
-    <div>
-        Ici tu es dans article {{ idAuteur }}
-    </div>
-</div>
+    {% block auteur %}
+        <div class="d-flex justify-content-center">
+            <div class="card mt-2" style="width: 25rem;">
+                <div class="card-body">
+                    <h3 class="card-title text-center">{{ auteur.firstname }} {{ auteur.lastname }}</h3>
+                    <div class="btn group mr-2 w-100">
+                        <a class="btn btn-dark " href="{{ path('deleteAuteur', {'idAuteur': auteur.idAuteur}) }}" role="button">Delete
+                            Auteur</a>
+                        <a class="btn btn-dark text-center" href="{{ path('updateAuteur', {'idAuteur': auteur.idAuteur}) }}"
+                           role="button">Update
+                            Auteur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
 {% endblock %}

@@ -1,15 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Un Article!{% endblock %}
+{% block title %}{{ article.title }}{% endblock %}
 
 {% block content %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-</style>
-
-<div class="example-wrapper">
-    <div>
-        Ici tu es dans article {{ idArticle }}
-    </div>
-</div>
+    {% block article %}
+        <div class="d-flex justify-content-center">
+            <div class="card mt-2" style="width: 25rem;">
+                <div class="card-body">
+                    <h3 class="card-title text-center">{{ article.title }}</h3>
+                    <p class="text-muted text-center">Crée le {{ article.date | date("d/m/y à h:i") }}</p>
+                    <p class="card-title text-center">{{ article.content }}</p>
+                    <p class="card-title text-center text-danger">Écrit part {{ article.auteur.firstname }} {{ article.auteur.lastname }}</p>
+                    <div class="btn group mr-2 w-100">
+                        <a class="btn btn-dark" href="{{ path('deleteArticle', {'idArticle': article.idArticle}) }}"
+                           role="button">Delete Article</a>
+                        <a class="btn btn-dark" href="{{ path('updateArticle', {'idArticle': article.idArticle}) }}"
+                           role="button">Update Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
 {% endblock %}

@@ -3,17 +3,19 @@
 {% block title %}Tous les Articles!{% endblock %}
 
 {% block content %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-</style>
-
-<div class="example-wrapper">
-    <div>
-        <form class="d-flex justify-content-center m-5">
-            <a class="btn btn-dark mr-2" href="{{ path('showOneArticle', {'idArticle': '1'}) }}" role="button">One Article</a>
-            <a class="btn btn-dark mr-2" href="{{ path('updateArticle', {'idArticle': '1'}) }}" role="button">Update Article</a>
-            <a class="btn btn-dark mr-2" href="{{ path('deleteArticle', {'idArticle': '1'}) }}" role="button">Delete Article</a>
-        </form>
-    </div>
-</div>
+        {% for article in articles %}
+            <div class="d-flex justify-content-center">
+                <div class="card mt-2" style="width: 25rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">{{ article.title }}</h3>
+                        <p class="text-muted text-center">Crée le {{ article.date | date("d/m/y à h:i") }}</p>
+                        <p class="card-title text-center">{{ article.content | striptags | slice(0,100) }}</p>
+                        <div class="btn group mr-2 w-100">
+                            <a class="btn btn-dark" href="{{ path('showOneArticle', {'idArticle': article.idArticle}) }}"
+                               role="button">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
 {% endblock %}

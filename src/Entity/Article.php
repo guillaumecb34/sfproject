@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class Article
  * @ORM\Entity(repositoryClass="App\Repository\Blog\ArticleRepository")
- * @ORM\Table(name"article")
+ * @ORM\Table(name="article")
  */
 class Article
 {
@@ -33,9 +33,69 @@ class Article
      private $content;
 
     /**
-     * ORM\Column (name"date", type"datetime", nullable=false)
+     * @ORM\Column (name="date", type="datetime", nullable=false)
      * @var \DateTime
      */
      private $date;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Auteur", inversedBy="articles")
+     * @ORM\JoinColumn(name="auteur_id", referencedColumnName="idAuteur")
+     * @var Auteur
+     */
+     private $auteur;
+
+     public function getIdArticle(): ?int
+     {
+         return $this->idArticle;
+     }
+
+     public function getTitle(): ?string
+     {
+         return $this->title;
+     }
+
+     public function setTitle(string $title): self
+     {
+         $this->title = $title;
+
+         return $this;
+     }
+
+     public function getContent(): ?string
+     {
+         return $this->content;
+     }
+
+     public function setContent(string $content): self
+     {
+         $this->content = $content;
+
+         return $this;
+     }
+
+     public function getDate(): ?\DateTimeInterface
+     {
+         return $this->date;
+     }
+
+     public function setDate(\DateTimeInterface $date): self
+     {
+         $this->date = $date;
+
+         return $this;
+     }
+
+     public function getAuteur(): ?Auteur
+     {
+         return $this->auteur;
+     }
+
+     public function setAuteur(?Auteur $auteur): self
+     {
+         $this->auteur = $auteur;
+
+         return $this;
+     }
 
 }

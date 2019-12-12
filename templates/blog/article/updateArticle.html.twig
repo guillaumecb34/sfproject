@@ -3,13 +3,25 @@
 {% block title %}Update Article!{% endblock %}
 
 {% block content %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-</style>
-
-<div class="example-wrapper">
-    <div>
-        Ici tu update l'article {{ idArticle }}
+    {{ form_start(articleForm) }}
+    <div class="d-flex justify-content-center mt-5">
+        <div class="card" style="width: 18rem" ;>
+            <div>
+                {{ form_errors(articleForm) }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">Modifier un Auteur</h5>
+                <div class="col card-subtitle mb-2 text-muted">
+                    {{ form_row(articleForm.title) }}
+                </div>
+                <div class="col card-subtitle mb-2 text-muted">
+                    {{ form_row(articleForm.content) }}
+                </div>
+                <div class="col">
+                    {{ form_row(articleForm.Valider) }}
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    {{ form_end(articleForm) }}
 {% endblock %}

@@ -3,13 +3,27 @@
 {% block title %}Create Auteur!{% endblock %}
 
 {% block content %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-</style>
 
-<div class="example-wrapper">
-    <div>
-        Ici tu create un auteur
+    {{ form_start(auteurForm) }}
+    <div class="d-flex justify-content-center mt-5">
+        <div class="card" style="width: 18rem" ;>
+            <div>
+                {{ form_errors(auteurForm) }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center">Crée un Auteur</h5>
+                <div class="col card-subtitle mb-2 text-muted">
+                    {{ form_row(auteurForm.firstname) }}
+                </div>
+                <div class="col card-subtitle mb-2 text-muted">
+                    {{ form_row(auteurForm.lastname) }}
+                </div>
+                <div class="col">
+                    {{ form_row(auteurForm.Valider) }}
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    {{ form_end(auteurForm) }}
+
 {% endblock %}
