@@ -17,7 +17,7 @@
                         </div>
                     {% endif %}
 
-                    <h1 class="h3 mb-3 font-weight-normal card-title text-center">Connectez vous !!</h1>
+                    <h1 class="mb-3 font-weight-normal card-title text-center">Connectez vous !!</h1>
                     <label class="card-subtitle mb-2 text-muted" for="inputEmail">Email</label>
                     <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control"
                            required
@@ -39,10 +39,11 @@
                             </label>
                         </div>
                     #}
-                    <div class="text-center" >
-                        <button class="btn btn-lg btn-dark mt-2 " style="width: 20rem;" type="submit">
-                            Sign in
+                    <div class="text-center mt-5" >
+                        <button class="btn btn-lg btn-dark " style="width: 20rem;" type="submit">
+                            Connexion
                         </button>
+                        <a class="btn btn-lg btn-dark " style="width: 20rem;" href="{{ path('app_register') }}" role="button">Inscription</a>
                     </div>
                 </form>
             </div>

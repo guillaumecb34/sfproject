@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f11d14-d01b-4f2e-81a7-ed186edcaf3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/CRUD/Blog/ArticleCRUDTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article/articleAll.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/articleAll.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article/createArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/createArticle.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article/deleteArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/deleteArticle.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article/updateArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/updateArticle.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/auteur/createAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/createAuteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/auteur/deleteAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/deleteAuteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/auteur/updateAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/updateAuteur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,17 +162,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\sfproject\public" />
-      <recent name="C:\wamp64\www\sfproject\src" />
-      <recent name="C:\wamp64\www\sfproject\templates\blog" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\sfproject\src\Form\Blog" />
       <recent name="C:\wamp64\www\sfproject\src\CRUD\Blog" />
       <recent name="C:\wamp64\www\sfproject\src\Entity" />
       <recent name="C:\wamp64\www\sfproject\templates\blog\auteur" />
       <recent name="C:\wamp64\www\sfproject\templates\blog\article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\sfproject\tests\CRUD\Blog" />
+      <recent name="C:\wamp64\www\sfproject\public" />
+      <recent name="C:\wamp64\www\sfproject\src" />
+      <recent name="C:\wamp64\www\sfproject\templates\blog" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -214,7 +208,7 @@
       <workItem from="1575966923742" duration="20841000" />
       <workItem from="1576053528541" duration="21510000" />
       <workItem from="1576083498852" duration="617000" />
-      <workItem from="1576139433430" duration="10509000" />
+      <workItem from="1576139433430" duration="18104000" />
     </task>
     <servers />
   </component>
@@ -238,10 +232,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576060206119" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1576060191398">
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1576163385519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576060191398" />
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576163385519" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1575967769458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
