@@ -71,6 +71,7 @@ class ArticleController extends AbstractController
     {
         // create empty article
         $article = new Article();
+        $article->setDate(new \DateTime('now'));
 
         // create form
         $form = $this->createForm(ArticleFormType::class, $article);

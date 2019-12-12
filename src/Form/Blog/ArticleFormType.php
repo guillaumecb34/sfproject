@@ -24,7 +24,7 @@ class ArticleFormType extends AbstractType
             ->add('content', TextareaType::class, [
                 'required' => true,
             ])
-            ->add('date', DateType::class)
+
             ->add( 'auteur', EntityType::class,[
                 'class' => Auteur::class,
                 'choice_label' => function($auteur){

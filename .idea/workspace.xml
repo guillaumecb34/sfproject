@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f11d14-d01b-4f2e-81a7-ed186edcaf3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CRUD/Blog/ArticleCRUD.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CRUD/Blog/AuteurCRUD.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Auteur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/Blog/AuteurFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuteurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Blog/ArticleFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/article/articleAll.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/articleAll.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article/articleOne.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/articleOne.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/article/createArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/createArticle.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/article/deleteArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/deleteArticle.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/article/updateArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article/updateArticle.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/auteur/auteurAll.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/auteurAll.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/auteur/auteurOne.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/auteurOne.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/auteur/createAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/createAuteur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/auteur/deleteAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/deleteAuteur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/auteur/updateAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/auteur/updateAuteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,6 +214,7 @@
       <workItem from="1575966923742" duration="20841000" />
       <workItem from="1576053528541" duration="21510000" />
       <workItem from="1576083498852" duration="617000" />
+      <workItem from="1576139433430" duration="10509000" />
     </task>
     <servers />
   </component>

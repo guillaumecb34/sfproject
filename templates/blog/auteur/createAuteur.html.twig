@@ -3,10 +3,10 @@
 {% block title %}Create Auteur!{% endblock %}
 
 {% block content %}
-
+   {% form_theme auteurForm 'bootstrap_4_layout.html.twig' %}
     {{ form_start(auteurForm) }}
     <div class="d-flex justify-content-center mt-5">
-        <div class="card" style="width: 18rem" ;>
+        <div class="card" style="width: 25rem" ;>
             <div>
                 {{ form_errors(auteurForm) }}
             </div>
@@ -18,7 +18,7 @@
                 <div class="col card-subtitle mb-2 text-muted">
                     {{ form_row(auteurForm.lastname) }}
                 </div>
-                <div class="col">
+                <div class="col text-center">
                     {{ form_row(auteurForm.Valider) }}
                 </div>
             </div>

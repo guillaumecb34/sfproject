@@ -3,8 +3,28 @@
 {% block title %}Create Article!{% endblock %}
 
 {% block content %}
-
-    {{ form(articleForm) }}
-
-
-{% endblock %}
+{% form_theme articleForm 'bootstrap_4_layout.html.twig' %}
+    {{ form_start(articleForm) }}
+<div class="d-flex justify-content-center mt-5">
+    <div class="card" style="width: 25rem" ;>
+        <div>
+            {{ form_errors(articleForm) }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Crée un Article</h5>
+            <div class="col card-subtitle mb-2 text-muted">
+                {{ form_row(articleForm.title) }}
+            </div>
+            <div class="col card-subtitle mb-2 text-muted">
+                {{ form_row(articleForm.content) }}
+            </div>
+            <div class="col card-subtitle mb-2 text-muted">
+                {{ form_row(articleForm.auteur) }}
+            </div>
+            <div class="col text-center">
+                {{ form_row(articleForm.Valider) }}
+            </div>
+        </div>
+    </div>
+    {{ form_end(articleForm) }}
+    {% endblock %}

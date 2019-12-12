@@ -1,23 +1,26 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Update Article!{% endblock %}
-
+{% form_theme articleForm 'bootstrap_4_layout.html.twig' %}
 {% block content %}
     {{ form_start(articleForm) }}
     <div class="d-flex justify-content-center mt-5">
-        <div class="card" style="width: 18rem" ;>
+        <div class="card" style="width: 25rem" ;>
             <div>
                 {{ form_errors(articleForm) }}
             </div>
             <div class="card-body">
-                <h5 class="card-title text-center">Modifier un Auteur</h5>
-                <div class="col card-subtitle mb-2 text-muted">
+                <h5 class="card-title text-center">Modifier un Article</h5>
+                <div class="col card-subtitle mb-2 text-muted" >
                     {{ form_row(articleForm.title) }}
                 </div>
-                <div class="col card-subtitle mb-2 text-muted">
+                <div class="col card-subtitle mb-2 text-muted" >
                     {{ form_row(articleForm.content) }}
                 </div>
-                <div class="col">
+                <div class="col card-subtitle mb-2 text-muted">
+                    {{ form_row(articleForm.auteur) }}
+                </div>
+                <div class="col text-center">
                     {{ form_row(articleForm.Valider) }}
                 </div>
             </div>
