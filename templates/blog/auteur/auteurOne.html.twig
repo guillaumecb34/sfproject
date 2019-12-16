@@ -6,13 +6,26 @@
 
     {% block auteur %}
         <div class="d-flex justify-content-center">
-            <div class="card mt-2" style="width: 25rem;">
+            <div class="card mt-2" style="width: 50rem;">
                 <div class="card-body">
                     <h3 class="card-title text-center">{{ auteur.firstname }} {{ auteur.lastname }}</h3>
+                    <ol>
+                        {% for article in auteur.articles %}
+                            <li class="w-100 d-flex flex-row bd-highlight align-items-center ">
+                                <h3 class="p-2 bd-highlight">{{ article.title }} </h3>
+                                <a class="p-2 bd-highlight"
+                                   href="{{ path('showOneArticle', {'idArticle': article.idArticle}) }}"
+                                   role="button">Lire l'article</a>
+                            </li>
+
+                        {% endfor %}
+                    </ol>
                     <div class="btn group mr-2 w-100">
-                        <a class="btn btn-dark " href="{{ path('deleteAuteur', {'idAuteur': auteur.idAuteur}) }}" role="button">Delete
+                        <a class="btn btn-dark " href="{{ path('deleteAuteur', {'idAuteur': auteur.idAuteur}) }}"
+                           role="button">Delete
                             Auteur</a>
-                        <a class="btn btn-dark text-center" href="{{ path('updateAuteur', {'idAuteur': auteur.idAuteur}) }}"
+                        <a class="btn btn-dark text-center"
+                           href="{{ path('updateAuteur', {'idAuteur': auteur.idAuteur}) }}"
                            role="button">Update
                             Auteur</a>
                     </div>
